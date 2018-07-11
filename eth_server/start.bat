@@ -1,1 +1,0 @@
-geth --preload "./mine_on_demand.js" --port 30303 --networkid 58342 --nodiscover --datadir="./chaindata" --maxpeers=0 --rpc --rpcport 8545 --rpcaddr 127.0.0.1 --rpccorsdomain "*" --rpcapi "eth,net,web3,personal" --wsapi "eth,net,web3,personal"

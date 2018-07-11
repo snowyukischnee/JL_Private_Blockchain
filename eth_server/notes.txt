@@ -1,2 +1,0 @@
-geth attach ipc:\\.\pipe\geth.ipc
-for (let item of CustomContracts.find().fetch()) CustomContracts.remove(item._id)
