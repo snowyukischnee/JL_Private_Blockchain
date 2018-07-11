@@ -1,0 +1,3 @@
+eth_contracts/build/
+node_server/node_modules/
+eth_server/chaindata/
