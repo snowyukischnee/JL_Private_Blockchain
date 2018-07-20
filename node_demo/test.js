@@ -9,40 +9,42 @@ let TestStage = require('../eth_contracts/build/contracts/TestStage.json')
 let TreatmentMethod = require('../eth_contracts/build/contracts/TreatmentMethod.json')
 let TreatmentStage = require('../eth_contracts/build/contracts/TreatmentStage.json')
 
-const private_key = 'this_is_private_key'
-
 async function deploy_contracts() {
-    let account = '0x0714DbaCbB1D870312E7D5e69ABb8F656B333Fb9'
+    const account = '0x0714DbaCbB1D870312E7D5e69ABb8F656B333Fb9'
+    const password = '12345678'
+    const private_key = 'this_is_private_key'
+
     console.log(account + ' is a valid address: ' + web3.utils.isAddress(account))
     try {
-        await web3.eth.personal.unlockAccount(account, '12345678', 1500) 
+        await web3.eth.personal.unlockAccount(account, password, 1500) 
         console.log('Account ' + account + ' has been unlocked')
         let maxGasPrice = await web3.eth.getGasPrice()
         console.log('maxGasPrice = ' + maxGasPrice)
+        //-----------------------------------------------------------------------------------------------------------------------------
         let transaction_hash
         let estimatedGas
 
-        let contractA = new web3.eth.Contract(Profile.abi) 
-        let deployA = contractA.deploy({data: Profile.bytecode, arguments: [private_key]})
-        estimatedGas = await deployA.estimateGas()
+        let contractProfile = new web3.eth.Contract(Profile.abi) 
+        let deployProfile = contractA.deploy({data: Profile.bytecode, arguments: [private_key]})
+        estimatedGas = await deployProfile.estimateGas()
         console.log('estimated Gas = ' + estimatedGas)
-        let deployedContractA = await contractA.deploy({data: Profile.bytecode, arguments: [private_key]}).send({
+        let deployedContractProfile = await contractProfile.deploy({data: Profile.bytecode, arguments: [private_key]}).send({
             from: account,
             gas: estimatedGas,
             gasPrice: '0'
         })
-        console.log('deployedContractAddress = ' + deployedContractA.options.address)
+        console.log('Profile = ' + deployedContractProfile.options.address)
 
-        let contractB = new web3.eth.Contract(Record.abi)
-        let deployB = contractB.deploy({data: Record.bytecode, arguments: [deployedContractA.options.address]})
-        estimatedGas = await deployB.estimateGas()
+        let contractRecord = new web3.eth.Contract(Record.abi)
+        let deployRecord = contractRecord.deploy({data: Record.bytecode, arguments: [deployedContractProfile.options.address]})
+        estimatedGas = await deployRecord.estimateGas()
         console.log('estimated Gas = ' + estimatedGas)
-        let deployedContractB = await contractB.deploy({data: Record.bytecode, arguments: [deployedContractA.options.address]}).send({
+        let deployedContractRecord = await contractRecord.deploy({data: Record.bytecode, arguments: [deployedContractProfile.options.address]}).send({
             from: account,
             gas: estimatedGas,
             gasPrice: '0'
         })
-        console.log('deployedContractAddress = ' + deployedContractB.options.address)
+        console.log('Record = ' + deployedContractRecord.options.address)
         
         let contractC = await new web3.eth.Contract(TestStage.abi)
         estimatedGas = await contractC.deploy({data: TestStage.bytecode, arguments: [deployedContractB.options.address, "Blood"]}).estimateGas()
