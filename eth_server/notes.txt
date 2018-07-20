@@ -1,2 +1,3 @@
 geth attach ipc:\\.\pipe\geth.ipc
 for (let item of CustomContracts.find().fetch()) CustomContracts.remove(item._id)
+swarm --bzzaccount 0x0714dbacbb1d870312e7d5e69abb8f656b333fb9 --datadir ./chaindata
