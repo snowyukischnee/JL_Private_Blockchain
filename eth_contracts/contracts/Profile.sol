@@ -44,6 +44,7 @@ contract Profile is BaseContract {
     }
 
     function setVariables(
+        string _priv_key,
         string _full_name,
         bool _gender,
         uint _dob,
@@ -55,7 +56,7 @@ contract Profile is BaseContract {
         bool _is_health_assuarance,
         uint _health_assuarance_expired_date,
         string _health_assuarance_id,
-        string _contact  ) public {
+        string _contact  ) public authenicated(_priv_key) {
 
         full_name = _full_name;
         gender = _gender;

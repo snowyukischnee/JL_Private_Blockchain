@@ -13,7 +13,7 @@ contract Record is BaseContract, Confirmable {
 
     //Vao vien:
     uint public start_date;
-    string public original_entry; //Vao vien ở : Cap cuu/ Khoa kham benh/ khao dieu tri
+    string public original_entry; //Vao vien o : Cap cuu/ Khoa kham benh/ khao dieu tri
     string public previous_medical_unit; //Noi kham truoc: hospital / tu den / other
     //Ra vien:
     uint public end_date;
@@ -58,7 +58,7 @@ contract Record is BaseContract, Confirmable {
         emit Confirm(msg.sender);
     }
 
-    function setStartVariables(uint _start_date,string _original_entry, string _previous_medical_unit ) public changable iscreator {
+    function setStartVariables(uint _start_date, string _original_entry, string _previous_medical_unit ) public changable iscreator {
         start_date = _start_date;
         original_entry = _original_entry;
         previous_medical_unit = _previous_medical_unit; 

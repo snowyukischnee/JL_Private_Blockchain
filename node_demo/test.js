@@ -41,9 +41,9 @@ async function deploy_contracts() {
             gasPrice: '0'
         })
         console.log('Profile = ' + deployedContractProfile.options.address)
-        console.log("------------------------------add profile varidable-----------------------------------------------------------------------------------------------")
-        estimatedGas = await deployedContractProfile.methods.setVariables("nguyen van a",true,1000,"Doctor","Kinh","Master",false,"Ha noi, Viet Nam",true,2500,"HI_123123456","0123456789" ) .estimateGas()
-        transaction_hash = await deployedContractProfile.methods.setVariables("nguyen van a",true,1000,"Doctor","Kinh","Master",false,"Ha noi, Viet Nam",true,2500,"HI_123123456","0123456789" ).send({
+        console.log("------------------------------add profile variable-----------------------------------------------------------------------------------------------")
+        estimatedGas = await deployedContractProfile.methods.setVariables(private_key, "nguyen van a",true,1000,"Doctor","Kinh","Master",false,"Ha noi, Viet Nam",true,2500,"HI_123123456","0123456789" ) .estimateGas()
+        transaction_hash = await deployedContractProfile.methods.setVariables(private_key, "nguyen van a",true,1000,"Doctor","Kinh","Master",false,"Ha noi, Viet Nam",true,2500,"HI_123123456","0123456789" ).send({
             from: account,
             gas: estimatedGas,
             gasPrice: '0'
@@ -59,8 +59,8 @@ async function deploy_contracts() {
         })
         console.log('Record = ' + deployedContractRecord.options.address)
         console.log("------------------------------add record start varidable-----------------------------------------------------------------------------------------------")
-        estimatedGas = await deployedContractRecord.methods.setStartVariables(1000,"Khoa kham benh","Benh vien bach mai" ).estimateGas()
-        transaction_hash = await deployedContractRecord.methods.setStartVariables(1000,"Khoa kham benh","Benh vien bach mai" ).send({
+        estimatedGas = await deployedContractRecord.methods.setStartVariables(new Date().getTime()/1000,"Khoa kham benh","Benh vien bach mai" ).estimateGas()
+        transaction_hash = await deployedContractRecord.methods.setStartVariables(new Date().getTime()/1000,"Khoa kham benh","Benh vien bach mai" ).send({
             from: account,
             gas: estimatedGas,
             gasPrice: '0'
@@ -246,11 +246,11 @@ async function deploy_contracts() {
     }
 }
 
-/*console.log(Profile.contractName + ' ABI:\n', JSON.stringify(Profile.abi))
+console.log(Profile.contractName + ' ABI:\n', JSON.stringify(Profile.abi))
 console.log(Record.contractName + ' ABI:\n', JSON.stringify(Record.abi))
 console.log(DiagnoseStage.contractName + ' ABI:\n', JSON.stringify(DiagnoseStage.abi))
 console.log(TestStage.contractName + ' ABI:\n', JSON.stringify(TestStage.abi))
 console.log(TreatmentStage.contractName + ' ABI:\n', JSON.stringify(TreatmentStage.abi))
 console.log(TreatmentMethod.contractName + ' ABI:\n', JSON.stringify(TreatmentMethod.abi))
-console.log(File.contractName + ' ABI:\n', JSON.stringify(File.abi))*/
+console.log(File.contractName + ' ABI:\n', JSON.stringify(File.abi))
 deploy_contracts()
