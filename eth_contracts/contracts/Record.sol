@@ -58,7 +58,7 @@ contract Record is BaseContract, Confirmable {
         emit Confirm(msg.sender);
     }
 
-    function setStartVariables(uint _start_date, string _original_entry, string _previous_medical_unit ) public changable iscreator {
+    function setStartVariables(uint _start_date, string _original_entry, string _previous_medical_unit) public changable iscreator {
         start_date = _start_date;
         original_entry = _original_entry;
         previous_medical_unit = _previous_medical_unit; 
@@ -69,7 +69,7 @@ contract Record is BaseContract, Confirmable {
         uint _end_date,string _end_reason,string _end_health_status,
         string _main_found_disease,string _relating_found_disease,string _next_medical_unit,
         uint _to_next_medical_unit_date,bool _is_catastrophe,bool _is_side_effect,
-        uint _dead_time,string _dead_reason,string _dead_detailed_reason ) public changable iscreator {
+        uint _dead_time,string _dead_reason,string _dead_detailed_reason) public changable iscreator {
 
         end_date = _end_date;
         end_reason = _end_reason; 

@@ -162,4 +162,7 @@ function updateEndRecord (_record_address, _end_date, _end_reason, _end_health_s
     return result
 }
 
+createProfile("my priv key", "WHat Is fUll name", true, new Date().getTime()/1000, "_occupation", "_region", "_education_level", false,
+    "_home_address", true, new Date().getTime()/1000, "_health_assuarance_id", "_contact").then(console.log)
+
 //exports.createProfile = createProfile
