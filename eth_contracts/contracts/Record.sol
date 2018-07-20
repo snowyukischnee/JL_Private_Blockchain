@@ -25,7 +25,7 @@ contract Record is BaseContract, Confirmable {
     uint public to_next_medical_unit_date; //Thoi gian chuyen den vien tiep theo
     bool public is_catastrophe; //Co tai bien ko
     bool public is_side_effect; //Co bien chung ko
-    string public dead_time; //Thoi gian tu vong
+    uint public dead_time; //Thoi gian tu vong
     string public dead_reason; //Li do tu vong : Do benh/ Do tai bien dieu tri/ Khac
     string public dead_detailed_reason; //Nguyen nhan chi tiet dan den tu vong    
 
@@ -69,7 +69,7 @@ contract Record is BaseContract, Confirmable {
         uint _end_date,string _end_reason,string _end_health_status,
         string _main_found_disease,string _relating_found_disease,string _next_medical_unit,
         uint _to_next_medical_unit_date,bool _is_catastrophe,bool _is_side_effect,
-        string _dead_time,string _dead_reason,string _dead_detailed_reason ) public changable iscreator {
+        uint _dead_time,string _dead_reason,string _dead_detailed_reason ) public changable iscreator {
 
         end_date = _end_date;
         end_reason = _end_reason; 
