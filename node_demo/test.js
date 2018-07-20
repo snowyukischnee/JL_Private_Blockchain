@@ -41,6 +41,13 @@ async function deploy_contracts() {
             gasPrice: '0'
         })
         console.log('Profile = ' + deployedContractProfile.options.address)
+        console.log("------------------------------add profile varidable-----------------------------------------------------------------------------------------------")
+        estimatedGas = await deployedContractProfile.methods.setVariables("nguyen van a",true,1000,"Doctor","Kinh","Master",false,"Ha noi, Viet Nam",true,2500,"HI_123123456","0123456789" ) .estimateGas()
+        transaction_hash = await deployedContractProfile.methods.setVariables("nguyen van a",true,1000,"Doctor","Kinh","Master",false,"Ha noi, Viet Nam",true,2500,"HI_123123456","0123456789" ).send({
+            from: account,
+            gas: estimatedGas,
+            gasPrice: '0'
+        })
         console.log("--------------------------------create record---------------------------------------------------------------------------------------------")
         let contractRecord = new web3.eth.Contract(Record.abi)
         let deployRecord = contractRecord.deploy({data: Record.bytecode, arguments: [deployedContractProfile.options.address]})
@@ -51,6 +58,20 @@ async function deploy_contracts() {
             gasPrice: '0'
         })
         console.log('Record = ' + deployedContractRecord.options.address)
+        console.log("------------------------------add record start varidable-----------------------------------------------------------------------------------------------")
+        estimatedGas = await deployedContractRecord.methods.setStartVariables(1000,"Khoa kham benh","Benh vien bach mai" ).estimateGas()
+        transaction_hash = await deployedContractRecord.methods.setStartVariables(1000,"Khoa kham benh","Benh vien bach mai" ).send({
+            from: account,
+            gas: estimatedGas,
+            gasPrice: '0'
+        })
+        console.log("------------------------------add record end varidable-----------------------------------------------------------------------------------------------")
+        estimatedGas = await deployedContractRecord.methods.setEndVariables(2000,"Ra vien","Khoi","Cum","Ho","",0,false,false,0,"","").estimateGas()
+        transaction_hash = await deployedContractRecord.methods.setEndVariables(2000,"Ra vien","Khoi","Cum","Ho","",0,false,false,0,"","").send({
+            from: account,
+            gas: estimatedGas,
+            gasPrice: '0'
+        })
         console.log("-----------------------------create diagnose stage------------------------------------------------------------------------------------------------")
         let contractDiagnoseStage = new web3.eth.Contract(DiagnoseStage.abi)
         let deployDiagnoseStage = contractDiagnoseStage.deploy({data: DiagnoseStage.bytecode, arguments: [deployedContractRecord.options.address, 2]})
@@ -61,6 +82,13 @@ async function deploy_contracts() {
             gasPrice: '0'
         })
         console.log('DiagnoseStage = ' + deployedDiagnoseStage.options.address)
+        console.log("------------------------------add diagnose stage doctor-----------------------------------------------------------------------------------------------")
+        estimatedGas = await deployedDiagnoseStage.methods.setVariables("doctor3").estimateGas()
+        transaction_hash = await deployedDiagnoseStage.methods.setVariables("doctor3").send({
+            from: account,
+            gas: estimatedGas,
+            gasPrice: '0'
+        })
         console.log("-----------------------------addManifestation--------------------------------------------------------------------------------------------------------------------")
         estimatedGas = await deployedDiagnoseStage.methods.addManifestation("this is addManifestation").estimateGas()
         transaction_hash = await deployedDiagnoseStage.methods.addManifestation("this is addManifestation").send({
@@ -92,6 +120,13 @@ async function deploy_contracts() {
             gasPrice: '0'
         })
         console.log('TestStage = ' + deployedTestStage.options.address)
+        console.log("------------------------------add test stage doctor-----------------------------------------------------------------------------------------------")
+        estimatedGas = await deployedTestStage.methods.setVariables("doctor2").estimateGas()
+        transaction_hash = await deployedTestStage.methods.setVariables("doctor2").send({
+            from: account,
+            gas: estimatedGas,
+            gasPrice: '0'
+        })
         console.log("-------------------------------create file-------------------------------------------------------------------------------------------------------------")
         let contractFile = new web3.eth.Contract(File.abi)
         let deployFile = contractFile.deploy({data: File.bytecode, arguments: [deployedTestStage.options.address, "test type 1", "filename"]})
@@ -143,6 +178,13 @@ async function deploy_contracts() {
             gasPrice: '0'
         })
         console.log('TreatmentStage = ' + deployedTreatmentStage.options.address)
+        console.log("------------------------------add treatment stage doctor-----------------------------------------------------------------------------------------------")
+        estimatedGas = await deployedTreatmentStage.methods.setVariables("doctor1").estimateGas()
+        transaction_hash = await deployedTreatmentStage.methods.setVariables("doctor1").send({
+            from: account,
+            gas: estimatedGas,
+            gasPrice: '0'
+        })
         console.log("--------------------------------create treatment method---------------------------------------------------------------------------------------------------------")
         let contractTreatmentMethod = new web3.eth.Contract(TreatmentMethod.abi)
         let deployTreatmentMethod = contractTreatmentMethod.deploy({data: TreatmentMethod.bytecode, arguments: [deployedTreatmentStage.options.address, "this is name", 1, 1000, "desc"]})
@@ -169,7 +211,7 @@ async function deploy_contracts() {
             gas: estimatedGas,
             gasPrice: '0'
         })
-        console.log('TreatmentMethod1 = ' + deployedTreatmentMethod.options.address)
+        console.log('TreatmentMethod1 = ' + deployedTreatmentMethod.options.address)        
         console.log("-----------------------------add treatment method----------------------------------------------------------------------------------------------------------")
         estimatedGas = await deployedTreatmentStage.methods.addTreatmentMethod(deployedTreatmentMethod.options.address).estimateGas()
         transaction_hash = await deployedTreatmentStage.methods.addTreatmentMethod(deployedTreatmentMethod.options.address).send({
@@ -183,7 +225,7 @@ async function deploy_contracts() {
             from: account,
             gas: estimatedGas,
             gasPrice: '0'
-        })
+        })       
         console.log("-----------------------------------confirm record------------------------------------------------------------------------------------------")
         estimatedGas = await deployedContractRecord.methods.confirm(private_key).estimateGas()
         transaction_hash = await deployedContractRecord.methods.confirm(private_key).send({
