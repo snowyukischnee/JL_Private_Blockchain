@@ -6,6 +6,8 @@ import "./Profile.sol";
 import "./Stages.sol";
 
 contract Record is BaseContract, Confirmable {
+    UtilLib.class public classtype = UtilLib.class.Record;
+
     address public profile;
     address[] public stages;
 
@@ -23,7 +25,7 @@ contract Record is BaseContract, Confirmable {
         emit ContractCreated(msg.sender);
     }
 
-    function addStage(address _addr) public changable iscreator {
+    function addStage(address _addr) public changable {
         require(Stage(_addr).classtype() == UtilLib.class.Stage);
         stages.push(_addr);
         emit StageAdded(_addr);
