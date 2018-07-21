@@ -30,18 +30,18 @@ class ViewProfilePage extends Component {
         }
         let deployedContract = new web3.eth.Contract(Profile.abi, address);
 
-        deployedContract.methods.full_name().call().then((full_name) => this.state.full_name = full_name);
-        deployedContract.methods.gender().call().then((gender) => this.state.gender = gender);
-        deployedContract.methods.dob().call().then((dob) => this.state.dob = dob);
-        deployedContract.methods.occupation().call().then((occupation) => this.state.occupation = occupation);
-        deployedContract.methods.region().call().then((region) => this.state.region = region);
-        deployedContract.methods.education_level().call().then((education_level) => this.state.education_level = education_level);
-        deployedContract.methods.is_foreigner().call().then((is_foreigner) => this.state.is_foreigner = is_foreigner);
-        deployedContract.methods.home_address().call().then((home_address) => this.state.home_address = home_address);
-        deployedContract.methods.is_health_assuarance().call().then((is_health_assuarance) => this.state.is_health_assuarance = is_health_assuarance);
-        deployedContract.methods.health_assuarance_expired_date().call().then((health_assuarance_expired_date) => this.state.health_assuarance_expired_date = health_assuarance_expired_date);
-        deployedContract.methods.health_assuarance_id().call().then((health_assuarance_id) => this.state.health_assuarance_id = health_assuarance_id);
-        deployedContract.methods.contact().call().then((contact) => this.state.contact = contact);
+        deployedContract.methods.full_name().call().then((full_name) => this.state.person.full_name = full_name);
+        deployedContract.methods.gender().call().then((gender) => this.state.person.gender = gender);
+        deployedContract.methods.dob().call().then((dob) => this.state.person.dob = dob);
+        deployedContract.methods.occupation().call().then((occupation) => this.state.person.occupation = occupation);
+        deployedContract.methods.region().call().then((region) => this.state.person.region = region);
+        deployedContract.methods.education_level().call().then((education_level) => this.state.person.education_level = education_level);
+        deployedContract.methods.is_foreigner().call().then((is_foreigner) => this.state.person.is_foreigner = is_foreigner);
+        deployedContract.methods.home_address().call().then((home_address) => this.state.person.home_address = home_address);
+        deployedContract.methods.is_health_assuarance().call().then((is_health_assuarance) => this.state.person.is_health_assuarance = is_health_assuarance);
+        deployedContract.methods.health_assuarance_expired_date().call().then((health_assuarance_expired_date) => this.state.person.health_assuarance_expired_date = health_assuarance_expired_date);
+        deployedContract.methods.health_assuarance_id().call().then((health_assuarance_id) => this.state.person.health_assuarance_id = health_assuarance_id);
+        deployedContract.methods.contact().call().then((contact) => this.state.person.contact = contact);
     }
      // _addr, private_key, _full_name, _gender, _dob, 
     // _occupation, _region, _education_level, _is_foreigner, 
