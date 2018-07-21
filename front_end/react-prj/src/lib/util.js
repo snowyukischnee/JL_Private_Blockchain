@@ -600,3 +600,5 @@ new Date().getTime()/1000, "null", "null")*/
 
 
 //exports.createProfile = createProfile
+exports.Profile_constructor = Profile_constructor
+exports.Profile_setVariables = Profile_setVariables

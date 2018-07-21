@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { } from '../lib/util';
+import {} from './ViewProfilePage'
 
 class AuthendicateProfile extends React.Component {
 
@@ -7,25 +9,30 @@ class AuthendicateProfile extends React.Component {
         this.confirmAccount = this.confirmAccount.bind(this);
         this.state = {
             private_key: "",
-            isValid: false
+            isValid: false,
+            address: ""
         }
     }
 
-    confirmAccount() {
-        if (this.state.private_key === "") {
+    confirmAccount(event) {
+        Profile_constructor(event.target.elements.private_key.value).then((address) => {
             this.setState({
-                isValid: true
+                address: address
             })
-        } else {
-            alert("Your input profile is not correct");
-        }
+        }).catch(alert);
     }
 
     render() {
         return (
             <div>
-                Private Key: <input type="text" name="private_key"/>
-                <button onClick={this.confirmAccount}>Confirm</button>
+                <div>
+                    Private Key: <input type="text" name="private_key" />
+                    <button onClick={this.confirmAccount}>Confirm</button>
+                </div>
+                <div>
+                    {this.state.address.length != 0 && (<ViewProfilePage address={this.state.address} />)}
+                </div>
+
             </div>
         );
     }
