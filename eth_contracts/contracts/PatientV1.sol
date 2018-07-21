@@ -1,4 +1,4 @@
-pragma solidity ^0.4.23;
+/*pragma solidity ^0.4.23;
 
 library UtilLib {
     enum _classtype_enum {
@@ -266,4 +266,4 @@ contract Profile {
         records.push(_addr);
         emit RecordAdded(_addr);
     }
-}
+}*/
