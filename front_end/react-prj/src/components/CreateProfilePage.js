@@ -1,7 +1,33 @@
-class CreateProfileView extends Component {
+import React, { Component } from 'react';
 
-    onSubmit() {
+class CreateProfilePage extends Component {
 
+    constructor(props) {
+        super(props);
+        this.onSubmit = this.onSubmit.bind(this);
+        this.onChange = this.onChange.bind(this);
+        this.state = {
+            person: {
+                private_key: "",
+                personal_id: "",
+                name: "",
+                dob: "",
+                contact: ""
+            }
+        }
+    }
+    
+    onSubmit(event) {
+        console.log(event);
+        this.setState({
+            person: {
+                private_key: event.target.elements.private_key.value,
+                personal_id: event.target.elements.personal_id,value,
+                name: event.target.elements.name.value,
+                dob: event.target.elements.dob.value,
+                contact: event.target.elements.contact.value
+            }
+        })
     }
 
     onChange() {
@@ -41,3 +67,5 @@ class CreateProfileView extends Component {
         )
     }
 }
+
+export default CreateProfilePage

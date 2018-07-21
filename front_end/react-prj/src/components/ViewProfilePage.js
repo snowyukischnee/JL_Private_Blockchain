@@ -1,5 +1,19 @@
-class ViewProfileView extends Component {
+import React, { Component } from 'react';
 
+class ViewProfilePage extends Component {
+
+    constructor(props) {
+        super(props);
+        this.onCreateRecord = this.onCreateRecord.bind(this);
+        this.onViewRecord = this.onViewRecord.bind(this);
+        this.state = {
+            private_key: "",
+            address: ""
+        }
+
+    } 
+    
+    
     onCreateRecord() {
 
     }
@@ -10,6 +24,7 @@ class ViewProfileView extends Component {
 
 
     render() {
+        //get info from db base on private key and address
         var person = {
             personal_id = '123',
             name: 'Someone',
@@ -27,11 +42,13 @@ class ViewProfileView extends Component {
                 <p>Start date: {person.start_date}</p>
                 <p>End date: {person.end_date}</p>
                 <hr />
-                <button onClick={this.onCreateRecord}>Create profile</button>
-                <button onClick={this.onViewRecord}>View Profile</button>
+                <button onClick={this.onCreateRecord}>Create record</button>
+                <button onClick={this.onViewRecord}>View record</button>
             </div>
         )
     }
 
 
 }
+
+export default ViewProfilePage

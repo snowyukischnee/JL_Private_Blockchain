@@ -1,4 +1,19 @@
+import React, { Component } from 'react';
+
 class ViewRecordView extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.onSubmit = this.onSubmit.bind(this);
+
+
+        this.state = {
+            recordValue1: "",
+            recordValue2: "",
+            recordValue3: ""
+        }
+    }
+    
 
     onSubmit() {
         
@@ -18,3 +33,5 @@ class ViewRecordView extends React.Component {
         )
     }
 }
+
+export default ViewRecordView;
