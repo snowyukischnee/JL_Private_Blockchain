@@ -1,5 +1,7 @@
 {
     "account": "0x0714DbaCbB1D870312E7D5e69ABb8F656B333Fb9",
     "password": "12345678",
-    "host": "http://localhost:8545"
+    "host": "http://localhost:8545",
+    "ws": "ws://127.0.0.1:8546",
+    "swarm": "http://localhost:8500/bzz:/"
 }
