@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {createProfile} from '../util';
 
 const Web3 = require('web3')
 const web3 = new Web3(Web3.givenProvider || 'ws://127.0.0.1:8546')
@@ -19,25 +20,7 @@ class Hospital extends Component{
     }
 
     handleSubmit(event) {
-        let account = this.state.value;
-        web3.eth.getGasPrice().then(alert).catch(alert);
-        let isValidAccount = web3.utils.isAddress(account);
-        if (isValidAccount) {
-            web3.eth.personal.unlockAccount(account, '12345678', 1500).then((result) => {
-                alert('Account unlocked');
-                web3.eth.getGasPrice().then(alert);
-            }).catch((error) => {
-                alert('Can not unlock account');
-            }).finally(() => {
-                web3.eth.personal.lockAccount(account).then((result) => {
-                    alert('Account locked');
-                }).catch((error) => {
-                    alert('Can not lock account');
-                })
-            })
-        } else {
-            alert('Account address not valid');
-        }
+        createProfile("This_IS_key").then(alert)
         event.preventDefault();
     }
 
