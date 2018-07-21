@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-import { web3, Profile, Profile_constructor, Profile_setVariables } from '../lib/util'; 
+import { web3, Profile, Profile_setVariables } from '../lib/util'; 
 
 class ViewProfilePage extends Component {
 
     constructor(props) {
         super(props);
-        this.onSubmit = this.onSubmit.bind(this);
-        //this.onChange = this.onChange.bind(this);
+        this.handleChange = this.handleChange.bind(this);
         this.onClickObject = this.onClickObject.bind(this);
-
-        let address = props.address;
-
+        this.onUpdate = this.onUpdate.bind(this);
+        this.componentDidMount = this.componentDidMount.bind(this);
+        this.handleCheckbox = this.handleCheckbox.bind(this);
         this.state = {
-            person: {
-                address: address,
+            form_data: {
+                address: props.address,
                 full_name: "",
                 gender: "",
                 dob: "",
@@ -25,93 +24,89 @@ class ViewProfilePage extends Component {
                 is_health_assuarance: "",
                 health_assuarance_expired_date: "",
                 health_assuarance_id: "",
-                contact: ""
+                contact: "",
+                records: "",
             }
         }
-        let deployedContract = new web3.eth.Contract(Profile.abi, address);
-
-        deployedContract.methods.full_name().call().then((full_name) => this.state.person.full_name = full_name);
-        deployedContract.methods.gender().call().then((gender) => this.state.person.gender = gender);
-        deployedContract.methods.dob().call().then((dob) => this.state.person.dob = dob);
-        deployedContract.methods.occupation().call().then((occupation) => this.state.person.occupation = occupation);
-        deployedContract.methods.region().call().then((region) => this.state.person.region = region);
-        deployedContract.methods.education_level().call().then((education_level) => this.state.person.education_level = education_level);
-        deployedContract.methods.is_foreigner().call().then((is_foreigner) => this.state.person.is_foreigner = is_foreigner);
-        deployedContract.methods.home_address().call().then((home_address) => this.state.person.home_address = home_address);
-        deployedContract.methods.is_health_assuarance().call().then((is_health_assuarance) => this.state.person.is_health_assuarance = is_health_assuarance);
-        deployedContract.methods.health_assuarance_expired_date().call().then((health_assuarance_expired_date) => this.state.person.health_assuarance_expired_date = health_assuarance_expired_date);
-        deployedContract.methods.health_assuarance_id().call().then((health_assuarance_id) => this.state.person.health_assuarance_id = health_assuarance_id);
-        deployedContract.methods.contact().call().then((contact) => this.state.person.contact = contact);
-    }
-     // _addr, private_key, _full_name, _gender, _dob, 
-    // _occupation, _region, _education_level, _is_foreigner, 
-    // _home_address, _is_health_assuarance, 
-    // _health_assuarance_expired_date, _health_assuarance_id, _contact
-    
-    onSubmit(event) {
-        console.log(event);
-        this.setState({
-            person: {
-                private_key: event.target.elements.private_key.value,
-                personal_id: event.target.elements.personal_id.value,
-                name: event.target.elements.name.value,
-                dob: event.target.elements.dob.value,
-                contact: event.target.elements.contact.value
-            }
-        });
-        Profile_constructor(this.state.private_key).then((address) => {
-            Profile_setVariables(address, )
-        }).catch((err) => {
-            alert(err);
-        });
     }
 
-
+    async componentDidMount() {
+        let deployedContractMethod = new web3.eth.Contract(Profile.abi, this.state.form_data.address).methods;
+        this.state.form_data.full_name = await deployedContractMethod.full_name().call()
+        this.state.form_data.gender = await deployedContractMethod.gender().call()
+        this.state.form_data.dob = await deployedContractMethod.dob().call()
+        this.state.form_data.occupation = await deployedContractMethod.occupation().call()
+        this.state.form_data.region = await deployedContractMethod.region().call()
+        this.state.form_data.education_level = await deployedContractMethod.education_level().call()
+        this.state.form_data.is_foreigner = await deployedContractMethod.is_foreigner().call()
+        this.state.form_data.home_address = await deployedContractMethod.home_address().call()
+        this.state.form_data.is_health_assuarance = await deployedContractMethod.is_health_assuarance().call()
+        this.state.form_data.health_assuarance_expired_date = await deployedContractMethod.health_assuarance_expired_date().call()
+        this.state.form_data.health_assuarance_id = await deployedContractMethod.health_assuarance_id().call()
+        this.state.form_data.contact = await deployedContractMethod.contact().call()
+        await this.setState(this.state);
+    }
    
     onClickObject(event) {
         console.log(this.state);
-        //event.preventDefault();
     }
 
+    onUpdate(event) {
+        event.preventDefault();
+        Profile_setVariables(
+            this.state.form_data.address, 
+            "my priv key", 
+            this.state.form_data.full_name, 
+            this.state.form_data.gender, 
+            this.state.form_data.dob, 
+            this.state.form_data.occupation, 
+            this.state.form_data.region, 
+            this.state.form_data.education_level, 
+            this.state.form_data.is_foreigner, 
+            this.state.form_data.home_address, 
+            this.state.form_data.is_health_assuarance, 
+            this.state.form_data.health_assuarance_expired_date, 
+            this.state.form_data.health_assuarance_id, 
+            this.state.form_data.contact
+        ).then(this.setState(this.state)).catch(alert)
+        
+    }
+
+    handleChange(event) {
+        this.state.form_data[event.target.name] = event.target.value
+        this.setState(this.state)
+    }
+
+    handleCheckbox(event) {
+        console.log(event.target.checked)
+        this.state.form_data[event.target.name] = event.target.checked
+        this.setState(this.state)
+    }
 
     render() {
-
         return (
-
-            <button onClick={this.onClickObject}>
-                Display Object
-            </button>
-
-
-            // <div>
-            //     <h1>Header</h1>
-            //     <form onSubmit={this.onSubmit}>
-            //         <label>
-            //             Private Key:
-            //             <input type="text" name="private_key" value={this.state.private_key} readOnly="readonly" />
-            //         </label>
-            //         <label>
-            //             Personal ID:
-            //             <input type="text" name="personal_id" onChange={this.handleChange} />
-            //         </label>
-            //         <label>
-            //             Name:
-            //             <input type="text" name="name" onChange={this.handleChange} />
-            //         </label>
-            //         <label>
-            //             Date of Birth:
-            //             <input type="text" name="dob" onChange={this.handleChange} />
-            //         </label>
-            //         <label>
-            //             Contact:
-            //             <input type="text" name="contact" onChange={this.handleChange} />
-            //         </label>
-            //         <input type="submit" value="Submit" />
-            //     </form>
-
-            // </div >
+            <div>
+                <button onClick={this.onClickObject}>
+                    Display Object
+                </button>
+                <form onSubmit={this.onUpdate}>
+                    <br/><label>address<input type="text" name="address" value={this.state.form_data.address} onChange={this.handleChange}/></label>
+                    <br/><label>full_name<input type="text" name="full_name" value={this.state.form_data.full_name} onChange={this.handleChange}/></label>
+                    <br/><label>gender<input type="checkbox" name="gender" checked={this.state.form_data.gender} onClick={this.handleCheckbox}/></label>
+                    <br/><label>dob<input type="number" name="dob" value={this.state.form_data.dob} onChange={this.handleChange}/></label>
+                    <br/><label>occupation<input type="text" name="occupation" value={this.state.form_data.occupation} onChange={this.handleChange}/></label>
+                    <br/><label>region<input type="text" name="region" value={this.state.form_data.region} onChange={this.handleChange}/></label>
+                    <br/><label>education_level<input type="text" name="education_level" value={this.state.form_data.education_level} onChange={this.handleChange}/></label>
+                    <br/><label>is_foreigner<input type="checkbox" name="is_foreigner" checked={this.state.form_data.is_foreigner} onClick={this.handleCheckbox}/></label>
+                    <br/><label>home_address<input type="text" name="home_address" value={this.state.form_data.home_address} onChange={this.handleChange}/></label>
+                    <br/><label>is_health_assuarance<input type="checkbox" name="is_health_assuarance" checked={this.state.form_data.is_health_assuarance} onClick={this.handleCheckbox}/></label>
+                    <br/><label>health_assuarance_expired_date<input type="number" name="health_assuarance_expired_date" value={this.state.form_data.health_assuarance_expired_date} onChange={this.handleChange}/></label>
+                    <br/><label>health_assuarance_id<input type="text" name="health_assuarance_id" value={this.state.form_data.health_assuarance_id} onChange={this.handleChange}/></label>
+                    <br/><label>contact<input type="text" name="contact" value={this.state.form_data.contact} onChange={this.handleChange}/></label>
+                    <input type="submit" name="update" value="update"/>
+                </form>
+            </div>
         )
     }
 }
-
 export default ViewProfilePage;
