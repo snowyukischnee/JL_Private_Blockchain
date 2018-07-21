@@ -1,9 +1,22 @@
-
+import React, { Component } from 'react';
 
 class RecordAuthendicate extends React.Component {
-    constructor(pros) {
+    constructor(props) {
         super(props);
 
+    }
+
+    handleChange(event) {
+        this.setState({
+            private_key: event.target.elements.private_key.value
+        })
+        event.preventDefault();
+    }
+
+
+
+    handleSubmit(event) {
+        event.preventDefault();
     }
 
     render() {
@@ -40,8 +53,9 @@ class CreateRecordPage extends React.Component {
 
     handleChange(event) {
         this.setState({
-            private_key: event.target.elements.private_key.value
+            private_key: event.private_key
         })
+        event.preventDefault();
     }
 
     validateAuthendication(event) {
@@ -49,12 +63,13 @@ class CreateRecordPage extends React.Component {
         if (this.state.private_key === "") {
             this.setState(() => {
                 return {
-                    isValidKey = true
+                    isValidKey: true
                 }
             });
         } else {
             alert("Private key and address is not match");
         }
+
     }
 
 
@@ -68,21 +83,26 @@ class CreateRecordPage extends React.Component {
                 <h1>Header</h1>
                 {this.state.isValidKey ? (<div>
                     <form>
-                        <input type="text" name="" />
-                        <input type="text" name="" />
-                        <input type="text" name="" />
-                        <button onClick={this.onRecordFormSubmit}> Submit </button>                    
+                        From Location: <input type="text" name="from_location" />
+                        Symptoms Before: <input type="text" name="symptem_before" />
+                        Current Status: <input type="text" name="current_status" />
+                        Medical Unit: <input type="text" name="" />
+                        <button onClick={this.onRecordFormSubmit}> Submit </button>
                     </form>
                 </div>) : (
-                    <div>
-                        <RecordAuthendicate/>
-                    </div>
-                )}
+                        <div>
+                            <h1>Header</h1>
+                            <form>
+                                Private Key: <input type="text" name="private_key" onChange={this.handleChange} />
+                                <button onClick={this.validateAuthendication}>OK</button>
+                            </form>
+                        </div>
+
+                    )}
             </div>
         )
     }
 
-
-
-
 }
+
+export default CreateRecordPage;
