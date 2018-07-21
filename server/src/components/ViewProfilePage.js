@@ -34,14 +34,14 @@ class ViewProfilePage extends Component {
         let deployedContractMethod = new web3.eth.Contract(Profile.abi, this.state.form_data.address).methods;
         this.state.form_data.full_name = await deployedContractMethod.full_name().call()
         this.state.form_data.gender = await deployedContractMethod.gender().call()
-        this.state.form_data.dob = await deployedContractMethod.dob().call()
+        this.state.form_data.dob = (new Date(await deployedContractMethod.dob().call() *1000)).toISOString().substring(0, 10)
         this.state.form_data.occupation = await deployedContractMethod.occupation().call()
         this.state.form_data.region = await deployedContractMethod.region().call()
         this.state.form_data.education_level = await deployedContractMethod.education_level().call()
         this.state.form_data.is_foreigner = await deployedContractMethod.is_foreigner().call()
         this.state.form_data.home_address = await deployedContractMethod.home_address().call()
         this.state.form_data.is_health_assuarance = await deployedContractMethod.is_health_assuarance().call()
-        this.state.form_data.health_assuarance_expired_date = await deployedContractMethod.health_assuarance_expired_date().call()
+        this.state.form_data.health_assuarance_expired_date = (new Date(await deployedContractMethod.health_assuarance_expired_date().call() *1000)).toISOString().substring(0, 10)
         this.state.form_data.health_assuarance_id = await deployedContractMethod.health_assuarance_id().call()
         this.state.form_data.contact = await deployedContractMethod.contact().call()
         let index = 0
@@ -62,17 +62,17 @@ class ViewProfilePage extends Component {
         let password = prompt("provide private key")
         Profile_setVariables(
             this.state.form_data.address, 
-            password, 
+            password,   
             this.state.form_data.full_name, 
             this.state.form_data.gender, 
-            this.state.form_data.dob, 
+            new Date(this.state.form_data.dob).getTime()/1000, 
             this.state.form_data.occupation, 
             this.state.form_data.region, 
             this.state.form_data.education_level, 
             this.state.form_data.is_foreigner, 
             this.state.form_data.home_address, 
             this.state.form_data.is_health_assuarance, 
-            this.state.form_data.health_assuarance_expired_date, 
+            new Date(this.state.form_data.health_assuarance_expired_date).getTime()/1000, 
             this.state.form_data.health_assuarance_id, 
             this.state.form_data.contact
         ).then(this.setState(this.state)).catch(alert)
@@ -91,26 +91,103 @@ class ViewProfilePage extends Component {
 
     render() {
         return (
-            <div>
-                <button onClick={this.onClickObject}>
-                    Display Object
-                </button>
-                <form onSubmit={this.onUpdate}>
-                    <br/><label>address<input type="text" name="address" value={this.state.form_data.address} onChange={this.handleChange}/></label>
-                    <br/><label>full_name<input type="text" name="full_name" value={this.state.form_data.full_name} onChange={this.handleChange}/></label>
-                    <br/><label>gender<input type="checkbox" name="gender" checked={this.state.form_data.gender} onClick={this.handleCheckbox}/></label>
-                    <br/><label>dob<input type="number" name="dob" value={this.state.form_data.dob} onChange={this.handleChange}/></label>
-                    <br/><label>occupation<input type="text" name="occupation" value={this.state.form_data.occupation} onChange={this.handleChange}/></label>
-                    <br/><label>region<input type="text" name="region" value={this.state.form_data.region} onChange={this.handleChange}/></label>
-                    <br/><label>education_level<input type="text" name="education_level" value={this.state.form_data.education_level} onChange={this.handleChange}/></label>
-                    <br/><label>is_foreigner<input type="checkbox" name="is_foreigner" checked={this.state.form_data.is_foreigner} onClick={this.handleCheckbox}/></label>
-                    <br/><label>home_address<input type="text" name="home_address" value={this.state.form_data.home_address} onChange={this.handleChange}/></label>
-                    <br/><label>is_health_assuarance<input type="checkbox" name="is_health_assuarance" checked={this.state.form_data.is_health_assuarance} onClick={this.handleCheckbox}/></label>
-                    <br/><label>health_assuarance_expired_date<input type="number" name="health_assuarance_expired_date" value={this.state.form_data.health_assuarance_expired_date} onChange={this.handleChange}/></label>
-                    <br/><label>health_assuarance_id<input type="text" name="health_assuarance_id" value={this.state.form_data.health_assuarance_id} onChange={this.handleChange}/></label>
-                    <br/><label>contact<input type="text" name="contact" value={this.state.form_data.contact} onChange={this.handleChange}/></label>
-                    <button name="update" onClick={this.update}>Update</button>
-                </form>
+            <div class="container">
+                <div class="row navbar">
+                    <div class="col-sm-12" style={{textAlign: 'center'}}>
+                        <label style={{fontSize: '20px'}}>HEALTHCARE</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button onClick={this.onClickObject}>
+                            Display Object
+                        </button> 
+                        <form>
+                            <fieldset>
+                                <legend>Personal Information</legend>
+                                <div class="form-group row">
+                                    <label for="addressId" class="col-sm-3 col-form-label">Address</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" name="address" class="form-control" id="addressId" placeholder="Enter Address..." value={this.state.form_data.address} onChange={this.handleChange}/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="fullnameId" class="col-sm-3 col-form-label">Full Name</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" name="full_name" class="form-control" id="fullnameId" placeholder="Enter Fullname..." value={this.state.form_data.full_name} onChange={this.handleChange}/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">Gender</label>
+                                    <div class="col-sm-9">
+                                        <input type="checkbox" name="gender" checked={this.state.form_data.gender} onClick={this.handleCheckbox}/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="dobId" class="col-sm-3 col-form-label">Birthday</label>
+                                    <div class="col-sm-9">
+                                        <input type="date" name="dob" class="form-control" id="dobId" value={this.state.form_data.dob} onChange={this.handleChange}/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="occupationId" class="col-sm-3 col-form-label">Occupation</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" name="occupation" class="form-control" id="occupationId" placeholder="Enter Occupation..." value={this.state.form_data.occupation} onChange={this.handleChange}/> 
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="regionId" class="col-sm-3 col-form-label">Region</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" name="region" class="form-control" id="regionId" placeholder="Enter Region..." value={this.state.form_data.region} onChange={this.handleChange}/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="educationLvId" class="col-sm-3 col-form-label">Education Level</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" name="education_level" class="form-control" id="educationLvId" placeholder="Enter Education Level..." value={this.state.form_data.education_level} onChange={this.handleChange}/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">Foreigner</label>
+                                    <div class="col-sm-9">
+                                        <input type="checkbox" name="is_foreigner" checked={this.state.form_data.is_foreigner} onClick={this.handleCheckbox}/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="homeAddressId" class="col-sm-3 col-form-label">Home Address</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" name="home_address" class="form-control" id="homeAddressId" placeholder="Enter Home Address..." value={this.state.form_data.home_address} onChange={this.handleChange}/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">Health Assuarance (HA)</label>
+                                    <div class="col-sm-9">
+                                        <input type="checkbox" name="is_health_assuarance" checked={this.state.form_data.is_health_assuarance} onClick={this.handleCheckbox}/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="haExpDateId" class="col-sm-3 col-form-label">HA Expired Date</label>
+                                    <div class="col-sm-9">
+                                        <input type="date" class="form-control" id="haExpDateId" name="health_assuarance_expired_date" value={this.state.form_data.health_assuarance_expired_date} onChange={this.handleChange}/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="haIdId" class="col-sm-3 col-form-label">Health Assuarance Id</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" name="health_assuarance_id" class="form-control" id="haIdId" placeholder="Enter Health Assuarance Id..." value={this.state.form_data.health_assuarance_id} onChange={this.handleChange}/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="contactId" class="col-sm-3 col-form-label">Contact</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" name="contact" class="form-control" id="contactId" placeholder="Enter Contact..." value={this.state.form_data.contact} onChange={this.handleChange}/>
+                                    </div>
+                                </div>
+                                <button name="update" class="btn btn-primary" onClick={this.update}>Update</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
             </div>
         )
     }
