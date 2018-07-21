@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import { } from '../lib/util'; 
+import { web3, Profile, Profile_constructor, Profile_setVariables } from '../lib/util'; 
 
 class ViewProfilePage extends Component {
 
     constructor(props) {
         super(props);
         this.onSubmit = this.onSubmit.bind(this);
-        this.onChange = this.onChange.bind(this);
+        //this.onChange = this.onChange.bind(this);
         this.onClickObject = this.onClickObject.bind(this);
 
-        let address = pros.address;
+        let address = props.address;
 
         this.state = {
             person: {
@@ -40,7 +40,7 @@ class ViewProfilePage extends Component {
         deployedContract.methods.home_address().call().then((home_address) => this.state.home_address = home_address);
         deployedContract.methods.is_health_assuarance().call().then((is_health_assuarance) => this.state.is_health_assuarance = is_health_assuarance);
         deployedContract.methods.health_assuarance_expired_date().call().then((health_assuarance_expired_date) => this.state.health_assuarance_expired_date = health_assuarance_expired_date);
-        deployedContract.methods.gender().health_assuarance_id().then((health_assuarance_id) => this.state.health_assuarance_id = health_assuarance_id);
+        deployedContract.methods.health_assuarance_id().call().then((health_assuarance_id) => this.state.health_assuarance_id = health_assuarance_id);
         deployedContract.methods.contact().call().then((contact) => this.state.contact = contact);
     }
      // _addr, private_key, _full_name, _gender, _dob, 
@@ -53,7 +53,7 @@ class ViewProfilePage extends Component {
         this.setState({
             person: {
                 private_key: event.target.elements.private_key.value,
-                personal_id: event.target.elements.personal_id,value,
+                personal_id: event.target.elements.personal_id.value,
                 name: event.target.elements.name.value,
                 dob: event.target.elements.dob.value,
                 contact: event.target.elements.contact.value
@@ -68,9 +68,9 @@ class ViewProfilePage extends Component {
 
 
    
-    onClickObject() {
+    onClickObject(event) {
         console.log(this.state);
-        
+        //event.preventDefault();
     }
 
 
@@ -78,7 +78,7 @@ class ViewProfilePage extends Component {
 
         return (
 
-            <button onSubmit={this.onClickObject}>
+            <button onClick={this.onClickObject}>
                 Display Object
             </button>
 
@@ -114,65 +114,4 @@ class ViewProfilePage extends Component {
     }
 }
 
-export default ViewProfilePage
-
-
-
-
-
-
-
-// import React, { Component } from 'react';
-
-// class ViewProfilePage extends Component {
-
-//     constructor(props) {
-//         super(props);
-//         this.onCreateRecord = this.onCreateRecord.bind(this);
-//         this.onViewRecord = this.onViewRecord.bind(this);
-//         this.state = {
-//             private_key: "",
-//             address: ""
-//         }
-
-//     } 
-    
-    
-//     onCreateRecord() {
-
-//     }
-
-//     onViewRecord() {
-        
-//     }
-
-
-//     render() {
-//         //get info from db base on private key and address
-//         var person = {
-//             personal_id = '123',
-//             name: 'Someone',
-//             age: '30',
-//             start_date = '10/10',
-//             end_date = '11/10'
-
-//         };
-//         return (
-//             <div>
-//                 <h1>Header</h1>
-//                 <p>Personal ID: {person.personal_id}</p>
-//                 <p>Name: {person.name}</p>
-//                 <p>Age: {person.age}</p>
-//                 <p>Start date: {person.start_date}</p>
-//                 <p>End date: {person.end_date}</p>
-//                 <hr />
-//                 <button onClick={this.onCreateRecord}>Create record</button>
-//                 <button onClick={this.onViewRecord}>View record</button>
-//             </div>
-//         )
-//     }
-
-
-// }
-
-// export default ViewProfilePage
+export default ViewProfilePage;

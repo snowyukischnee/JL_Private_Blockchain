@@ -1,5 +1,6 @@
 let config = require("./config.json")
 let Web3 = require('web3')
+
 let web3 = new Web3(Web3.givenProvider || config.host)
 
 let File = require('./build/contracts/File.json')
@@ -600,5 +601,30 @@ new Date().getTime()/1000, "null", "null")*/
 
 
 //exports.createProfile = createProfile
+
+exports.web3 = web3
+exports.File = File
+exports.DiagnoseStage = DiagnoseStage
+exports.Profile = Profile
+exports.Stage = Stage
+exports.Record = Record
+exports.TestStage = TestStage
+exports.TreatmentMethod = TreatmentMethod
+exports.TreatmentStage = TreatmentStage
 exports.Profile_constructor = Profile_constructor
 exports.Profile_setVariables = Profile_setVariables
+exports.Record_constructor = Record_constructor
+exports.Record_setStartVariables = Record_setStartVariables
+exports.Record_setEndVariables = Record_setEndVariables
+exports.Record_confirm = Record_confirm
+exports.Stage_setVariables = Stage_setVariables
+exports.Stage_confirm = Stage_confirm
+exports.TreatmentStage_constructor = TreatmentStage_constructor
+exports.TreatmentStage_addTreatmentMethod = TreatmentStage_addTreatmentMethod
+exports.DiagnoseStage_constructor = DiagnoseStage_constructor
+exports.DiagnoseStage_addManifestation = DiagnoseStage_addManifestation
+exports.DiagnoseStage_setDiagnose = DiagnoseStage_setDiagnose
+exports.TestStage_constructor = TestStage_constructor
+exports.TestStage_pushFile = TestStage_pushFile
+exports.File_constructor = File_constructor
+exports.TreatmentMethod_constructor = TreatmentMethod_constructor
