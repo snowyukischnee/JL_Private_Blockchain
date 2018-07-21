@@ -46,7 +46,7 @@ class ViewProfilePage extends Component {
         this.state.form_data.contact = await deployedContractMethod.contact().call()
         let index = 0
         try {
-            this.state.form_data.records.push(await deployedContractMethod.contact(index++).call())
+            this.state.form_data.records.push(await deployedContractMethod.records(index++).call())
         } catch (e) {
             console.error(e)
         }
