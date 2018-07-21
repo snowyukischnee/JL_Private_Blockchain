@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './css/index.css';
+import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import  ViewProfilePage from './components/ViewProfilePage';
+
+ReactDOM.render(<ViewProfilePage address="0x67ECd2E10E4da7dfa10FD0508C05c4D6f80e9A11" />, document.getElementById('root'));
 registerServiceWorker();

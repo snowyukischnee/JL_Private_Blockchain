@@ -139,8 +139,8 @@
       "type": "event"
     }
   ],
-  "bytecode": "0x60806040526004600260016101000a81548160ff0219169083600481111561002357fe5b021790555034801561003457600080fd5b506040516107f33803806107f38339810180604052810190808051906020019092919080518201929190602001805190602001909291908051906020019092919080518201929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555042600181905550600260048111156100d357fe5b8573ffffffffffffffffffffffffffffffffffffffff1663ccccac1f6040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15801561013757600080fd5b505af115801561014b573d6000803e3d6000fd5b505050506040513d602081101561016157600080fd5b8101908080519060200190929190505050600481111561017d57fe5b14151561018957600080fd5b60028081111561019557fe5b8573ffffffffffffffffffffffffffffffffffffffff1663dd5ab87a6040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b1580156101f957600080fd5b505af115801561020d573d6000803e3d6000fd5b505050506040513d602081101561022357600080fd5b8101908080519060200190929190505050600281111561023f57fe5b14151561024b57600080fd5b83600390805190602001906102619291906102d4565b50826004819055508160058190555080600690805190602001906102869291906102d4565b503373ffffffffffffffffffffffffffffffffffffffff167fcf78cf0d6f3d8371e1075c69c492ab4ec5d8cf23a1a239b6a51a1d00be7ca31260405160405180910390a25050505050610379565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061031557805160ff1916838001178555610343565b82800160010185558215610343579182015b82811115610342578251825591602001919060010190610327565b5b5090506103509190610354565b5090565b61037691905b8082111561037257600081600090555060010161035a565b5090565b90565b61046b806103886000396000f300608060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806302d05d3f1461008857806306fdde03146100df578063639d7a071461016f5780637284e4161461019a578063834ee4171461022a5780639ec6099514610255578063ccccac1f14610280575b600080fd5b34801561009457600080fd5b5061009d6102b9565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100eb57600080fd5b506100f46102de565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610134578082015181840152602081019050610119565b50505050905090810190601f1680156101615780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561017b57600080fd5b5061018461037c565b6040518082815260200191505060405180910390f35b3480156101a657600080fd5b506101af610382565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101ef5780820151818401526020810190506101d4565b50505050905090810190601f16801561021c5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561023657600080fd5b5061023f610420565b6040518082815260200191505060405180910390f35b34801561026157600080fd5b5061026a610426565b6040518082815260200191505060405180910390f35b34801561028c57600080fd5b5061029561042c565b604051808260048111156102a557fe5b60ff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60038054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103745780601f1061034957610100808354040283529160200191610374565b820191906000526020600020905b81548152906001019060200180831161035757829003601f168201915b505050505081565b60015481565b60068054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104185780601f106103ed57610100808354040283529160200191610418565b820191906000526020600020905b8154815290600101906020018083116103fb57829003601f168201915b505050505081565b60045481565b60055481565b600260019054906101000a900460ff16815600a165627a7a72305820a73d25af49a9467e3ac18add0e22fbbdceb7b4d61fe81f53cace719934c8732f0029",
-  "deployedBytecode": "0x608060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806302d05d3f1461008857806306fdde03146100df578063639d7a071461016f5780637284e4161461019a578063834ee4171461022a5780639ec6099514610255578063ccccac1f14610280575b600080fd5b34801561009457600080fd5b5061009d6102b9565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100eb57600080fd5b506100f46102de565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610134578082015181840152602081019050610119565b50505050905090810190601f1680156101615780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561017b57600080fd5b5061018461037c565b6040518082815260200191505060405180910390f35b3480156101a657600080fd5b506101af610382565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101ef5780820151818401526020810190506101d4565b50505050905090810190601f16801561021c5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561023657600080fd5b5061023f610420565b6040518082815260200191505060405180910390f35b34801561026157600080fd5b5061026a610426565b6040518082815260200191505060405180910390f35b34801561028c57600080fd5b5061029561042c565b604051808260048111156102a557fe5b60ff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60038054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103745780601f1061034957610100808354040283529160200191610374565b820191906000526020600020905b81548152906001019060200180831161035757829003601f168201915b505050505081565b60015481565b60068054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104185780601f106103ed57610100808354040283529160200191610418565b820191906000526020600020905b8154815290600101906020018083116103fb57829003601f168201915b505050505081565b60045481565b60055481565b600260019054906101000a900460ff16815600a165627a7a72305820a73d25af49a9467e3ac18add0e22fbbdceb7b4d61fe81f53cace719934c8732f0029",
+  "bytecode": "0x60806040526004600260016101000a81548160ff0219169083600481111561002357fe5b021790555034801561003457600080fd5b506040516107f33803806107f38339810180604052810190808051906020019092919080518201929190602001805190602001909291908051906020019092919080518201929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555042600181905550600260048111156100d357fe5b8573ffffffffffffffffffffffffffffffffffffffff1663ccccac1f6040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15801561013757600080fd5b505af115801561014b573d6000803e3d6000fd5b505050506040513d602081101561016157600080fd5b8101908080519060200190929190505050600481111561017d57fe5b14151561018957600080fd5b60028081111561019557fe5b8573ffffffffffffffffffffffffffffffffffffffff1663dd5ab87a6040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b1580156101f957600080fd5b505af115801561020d573d6000803e3d6000fd5b505050506040513d602081101561022357600080fd5b8101908080519060200190929190505050600281111561023f57fe5b14151561024b57600080fd5b83600390805190602001906102619291906102d4565b50826004819055508160058190555080600690805190602001906102869291906102d4565b503373ffffffffffffffffffffffffffffffffffffffff167fcf78cf0d6f3d8371e1075c69c492ab4ec5d8cf23a1a239b6a51a1d00be7ca31260405160405180910390a25050505050610379565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061031557805160ff1916838001178555610343565b82800160010185558215610343579182015b82811115610342578251825591602001919060010190610327565b5b5090506103509190610354565b5090565b61037691905b8082111561037257600081600090555060010161035a565b5090565b90565b61046b806103886000396000f300608060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806302d05d3f1461008857806306fdde03146100df578063639d7a071461016f5780637284e4161461019a578063834ee4171461022a5780639ec6099514610255578063ccccac1f14610280575b600080fd5b34801561009457600080fd5b5061009d6102b9565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100eb57600080fd5b506100f46102de565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610134578082015181840152602081019050610119565b50505050905090810190601f1680156101615780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561017b57600080fd5b5061018461037c565b6040518082815260200191505060405180910390f35b3480156101a657600080fd5b506101af610382565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101ef5780820151818401526020810190506101d4565b50505050905090810190601f16801561021c5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561023657600080fd5b5061023f610420565b6040518082815260200191505060405180910390f35b34801561026157600080fd5b5061026a610426565b6040518082815260200191505060405180910390f35b34801561028c57600080fd5b5061029561042c565b604051808260048111156102a557fe5b60ff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60038054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103745780601f1061034957610100808354040283529160200191610374565b820191906000526020600020905b81548152906001019060200180831161035757829003601f168201915b505050505081565b60015481565b60068054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104185780601f106103ed57610100808354040283529160200191610418565b820191906000526020600020905b8154815290600101906020018083116103fb57829003601f168201915b505050505081565b60045481565b60055481565b600260019054906101000a900460ff16815600a165627a7a723058207e72603c5c73c6eb70d6dd7160b21c5bb1b998b696f2909110c92baafabf8d320029",
+  "deployedBytecode": "0x608060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806302d05d3f1461008857806306fdde03146100df578063639d7a071461016f5780637284e4161461019a578063834ee4171461022a5780639ec6099514610255578063ccccac1f14610280575b600080fd5b34801561009457600080fd5b5061009d6102b9565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100eb57600080fd5b506100f46102de565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610134578082015181840152602081019050610119565b50505050905090810190601f1680156101615780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561017b57600080fd5b5061018461037c565b6040518082815260200191505060405180910390f35b3480156101a657600080fd5b506101af610382565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101ef5780820151818401526020810190506101d4565b50505050905090810190601f16801561021c5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561023657600080fd5b5061023f610420565b6040518082815260200191505060405180910390f35b34801561026157600080fd5b5061026a610426565b6040518082815260200191505060405180910390f35b34801561028c57600080fd5b5061029561042c565b604051808260048111156102a557fe5b60ff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60038054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103745780601f1061034957610100808354040283529160200191610374565b820191906000526020600020905b81548152906001019060200180831161035757829003601f168201915b505050505081565b60015481565b60068054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104185780601f106103ed57610100808354040283529160200191610418565b820191906000526020600020905b8154815290600101906020018083116103fb57829003601f168201915b505050505081565b60045481565b60055481565b600260019054906101000a900460ff16815600a165627a7a723058207e72603c5c73c6eb70d6dd7160b21c5bb1b998b696f2909110c92baafabf8d320029",
   "sourceMap": "112:686:8:-;;;193:29;160:62;;;;;;;;;;;;;;;;;;;;;;;;;;351:444;8:9:-1;5:2;;;30:1;27;20:12;5:2;351:444:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;372:10:0;362:7;;:20;;;;;;;;;;;;;;;;;;408:3;393:12;:18;;;;511:19:8;474:56;;;;;;;;489:5;474:31;;;:33;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;474:33:8;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;474:33:8;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;474:33:8;;;;;;;;;;;;;;;;:56;;;;;;;;;466:65;;;;;;;;587:28;550:65;;;;;;;;565:5;550:31;;;:33;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;550:33:8;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;550:33:8;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;550:33:8;;;;;;;;;;;;;;;;:65;;;;;;;;;542:74;;;;;;;;634:5;627:4;:12;;;;;;;;;;;;:::i;:::-;;663:11;650:10;:24;;;;697:10;685:9;:22;;;;732:12;718:11;:26;;;;;;;;;;;;:::i;:::-;;776:10;760:27;;;;;;;;;;;;351:444;;;;;112:686;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
   "deployedSourceMap": "112:686:8:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;86:22:0;;8:9:-1;5:2;;;30:1;27;20:12;5:2;86:22:0;;;;;;;;;;;;;;;;;;;;;;;;;;;235:18:8;;8:9:-1;5:2;;;30:1;27;20:12;5:2;235:18:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;235:18:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;115:24:0;;8:9:-1;5:2;;;30:1;27;20:12;5:2;115:24:0;;;;;;;;;;;;;;;;;;;;;;;317:25:8;;8:9:-1;5:2;;;30:1;27;20:12;5:2;317:25:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;317:25:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;260:22;;8:9:-1;5:2;;;30:1;27;20:12;5:2;260:22:8;;;;;;;;;;;;;;;;;;;;;;;289:21;;8:9:-1;5:2;;;30:1;27;20:12;5:2;289:21:8;;;;;;;;;;;;;;;;;;;;;;;160:62;;8:9:-1;5:2;;;30:1;27;20:12;5:2;160:62:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;86:22:0;;;;;;;;;;;;;:::o;235:18:8:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;115:24:0:-;;;;:::o;317:25:8:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;260:22::-;;;;:::o;289:21::-;;;;:::o;160:62::-;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.4.23;\r\n\r\nimport \"./Libraries.sol\";\r\nimport \"./BaseContracts.sol\";\r\nimport \"./Stages.sol\";\r\n\r\ncontract TreatmentMethod is BaseContract {\r\n    UtilLib.class public classtype = UtilLib.class.TreatmentMethod;\r\n    \r\n    string public name;\r\n    uint public start_time;\r\n    uint public stop_time;\r\n    string public description;\r\n\r\n    constructor(address _addr, string _name, uint _start_time, uint _stop_time, string _description) public {\r\n        require(TreatmentStage(_addr).classtype() == UtilLib.class.Stage);\r\n        require(TreatmentStage(_addr).stagetype() == UtilLib.stage.TreatmentStage);\r\n        name = _name;\r\n        start_time = _start_time;\r\n        stop_time = _stop_time;\r\n        description = _description;\r\n        emit ContractCreated(msg.sender);\r\n    }\r\n}",
@@ -149,14 +149,14 @@
     "absolutePath": "/C/Users/TuanNH/Desktop/eth_prj/eth_contracts/contracts/TreatmentMethod.sol",
     "exportedSymbols": {
       "TreatmentMethod": [
-        802
+        1091
       ]
     },
-    "id": 803,
+    "id": 1092,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 724,
+        "id": 1013,
         "literals": [
           "solidity",
           "^",
@@ -169,9 +169,9 @@
       {
         "absolutePath": "/C/Users/TuanNH/Desktop/eth_prj/eth_contracts/contracts/Libraries.sol",
         "file": "./Libraries.sol",
-        "id": 725,
+        "id": 1014,
         "nodeType": "ImportDirective",
-        "scope": 803,
+        "scope": 1092,
         "sourceUnit": 159,
         "src": "28:25:8",
         "symbolAliases": [],
@@ -180,9 +180,9 @@
       {
         "absolutePath": "/C/Users/TuanNH/Desktop/eth_prj/eth_contracts/contracts/BaseContracts.sol",
         "file": "./BaseContracts.sol",
-        "id": 726,
+        "id": 1015,
         "nodeType": "ImportDirective",
-        "scope": 803,
+        "scope": 1092,
         "sourceUnit": 52,
         "src": "55:29:8",
         "symbolAliases": [],
@@ -191,10 +191,10 @@
       {
         "absolutePath": "/C/Users/TuanNH/Desktop/eth_prj/eth_contracts/contracts/Stages.sol",
         "file": "./Stages.sol",
-        "id": 727,
+        "id": 1016,
         "nodeType": "ImportDirective",
-        "scope": 803,
-        "sourceUnit": 723,
+        "scope": 1092,
+        "sourceUnit": 1012,
         "src": "86:22:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -205,7 +205,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 728,
+              "id": 1017,
               "name": "BaseContract",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 37,
@@ -215,7 +215,7 @@
                 "typeString": "contract BaseContract"
               }
             },
-            "id": 729,
+            "id": 1018,
             "nodeType": "InheritanceSpecifier",
             "src": "140:12:8"
           }
@@ -226,9 +226,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 802,
+        "id": 1091,
         "linearizedBaseContracts": [
-          802,
+          1091,
           37
         ],
         "name": "TreatmentMethod",
@@ -236,10 +236,10 @@
         "nodes": [
           {
             "constant": false,
-            "id": 734,
+            "id": 1023,
             "name": "classtype",
             "nodeType": "VariableDeclaration",
-            "scope": 802,
+            "scope": 1091,
             "src": "160:62:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -249,7 +249,7 @@
             },
             "typeName": {
               "contractScope": null,
-              "id": 730,
+              "id": 1019,
               "name": "UtilLib.class",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 125,
@@ -265,7 +265,7 @@
                 "argumentTypes": null,
                 "expression": {
                   "argumentTypes": null,
-                  "id": 731,
+                  "id": 1020,
                   "name": "UtilLib",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
@@ -276,7 +276,7 @@
                     "typeString": "type(library UtilLib)"
                   }
                 },
-                "id": 732,
+                "id": 1021,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": false,
@@ -290,7 +290,7 @@
                   "typeString": "type(enum UtilLib.class)"
                 }
               },
-              "id": 733,
+              "id": 1022,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -308,10 +308,10 @@
           },
           {
             "constant": false,
-            "id": 736,
+            "id": 1025,
             "name": "name",
             "nodeType": "VariableDeclaration",
-            "scope": 802,
+            "scope": 1091,
             "src": "235:18:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -320,7 +320,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 735,
+              "id": 1024,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "235:6:8",
@@ -334,10 +334,10 @@
           },
           {
             "constant": false,
-            "id": 738,
+            "id": 1027,
             "name": "start_time",
             "nodeType": "VariableDeclaration",
-            "scope": 802,
+            "scope": 1091,
             "src": "260:22:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -346,7 +346,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 737,
+              "id": 1026,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "260:4:8",
@@ -360,10 +360,10 @@
           },
           {
             "constant": false,
-            "id": 740,
+            "id": 1029,
             "name": "stop_time",
             "nodeType": "VariableDeclaration",
-            "scope": 802,
+            "scope": 1091,
             "src": "289:21:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -372,7 +372,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 739,
+              "id": 1028,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "289:4:8",
@@ -386,10 +386,10 @@
           },
           {
             "constant": false,
-            "id": 742,
+            "id": 1031,
             "name": "description",
             "nodeType": "VariableDeclaration",
-            "scope": 802,
+            "scope": 1091,
             "src": "317:25:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -398,7 +398,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 741,
+              "id": 1030,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "317:6:8",
@@ -412,7 +412,7 @@
           },
           {
             "body": {
-              "id": 800,
+              "id": 1089,
               "nodeType": "Block",
               "src": "455:340:8",
               "statements": [
@@ -426,7 +426,7 @@
                           "typeIdentifier": "t_enum$_class_$125",
                           "typeString": "enum UtilLib.class"
                         },
-                        "id": 764,
+                        "id": 1053,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -441,11 +441,11 @@
                               "arguments": [
                                 {
                                   "argumentTypes": null,
-                                  "id": 757,
+                                  "id": 1046,
                                   "name": "_addr",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 744,
+                                  "referencedDeclaration": 1033,
                                   "src": "489:5:8",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_address",
@@ -460,18 +460,18 @@
                                     "typeString": "address"
                                   }
                                 ],
-                                "id": 756,
+                                "id": 1045,
                                 "name": "TreatmentStage",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 592,
+                                "referencedDeclaration": 881,
                                 "src": "474:14:8",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_TreatmentStage_$592_$",
+                                  "typeIdentifier": "t_type$_t_contract$_TreatmentStage_$881_$",
                                   "typeString": "type(contract TreatmentStage)"
                                 }
                               },
-                              "id": 758,
+                              "id": 1047,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -481,25 +481,25 @@
                               "nodeType": "FunctionCall",
                               "src": "474:21:8",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_TreatmentStage_$592",
+                                "typeIdentifier": "t_contract$_TreatmentStage_$881",
                                 "typeString": "contract TreatmentStage"
                               }
                             },
-                            "id": 759,
+                            "id": 1048,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "classtype",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 458,
+                            "referencedDeclaration": 723,
                             "src": "474:31:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$__$returns$_t_enum$_class_$125_$",
                               "typeString": "function () view external returns (enum UtilLib.class)"
                             }
                           },
-                          "id": 760,
+                          "id": 1049,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -521,7 +521,7 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 761,
+                              "id": 1050,
                               "name": "UtilLib",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -532,7 +532,7 @@
                                 "typeString": "type(library UtilLib)"
                               }
                             },
-                            "id": 762,
+                            "id": 1051,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -546,7 +546,7 @@
                               "typeString": "type(enum UtilLib.class)"
                             }
                           },
-                          "id": 763,
+                          "id": 1052,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -574,21 +574,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 755,
+                      "id": 1044,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        820,
-                        821
+                        1109,
+                        1110
                       ],
-                      "referencedDeclaration": 820,
+                      "referencedDeclaration": 1109,
                       "src": "466:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 765,
+                    "id": 1054,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -602,7 +602,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 766,
+                  "id": 1055,
                   "nodeType": "ExpressionStatement",
                   "src": "466:65:8"
                 },
@@ -616,7 +616,7 @@
                           "typeIdentifier": "t_enum$_stage_$129",
                           "typeString": "enum UtilLib.stage"
                         },
-                        "id": 776,
+                        "id": 1065,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -631,11 +631,11 @@
                               "arguments": [
                                 {
                                   "argumentTypes": null,
-                                  "id": 769,
+                                  "id": 1058,
                                   "name": "_addr",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 744,
+                                  "referencedDeclaration": 1033,
                                   "src": "565:5:8",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_address",
@@ -650,18 +650,18 @@
                                     "typeString": "address"
                                   }
                                 ],
-                                "id": 768,
+                                "id": 1057,
                                 "name": "TreatmentStage",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 592,
+                                "referencedDeclaration": 881,
                                 "src": "550:14:8",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_TreatmentStage_$592_$",
+                                  "typeIdentifier": "t_type$_t_contract$_TreatmentStage_$881_$",
                                   "typeString": "type(contract TreatmentStage)"
                                 }
                               },
-                              "id": 770,
+                              "id": 1059,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -671,25 +671,25 @@
                               "nodeType": "FunctionCall",
                               "src": "550:21:8",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_TreatmentStage_$592",
+                                "typeIdentifier": "t_contract$_TreatmentStage_$881",
                                 "typeString": "contract TreatmentStage"
                               }
                             },
-                            "id": 771,
+                            "id": 1060,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "stagetype",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 540,
+                            "referencedDeclaration": 829,
                             "src": "550:31:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$__$returns$_t_enum$_stage_$129_$",
                               "typeString": "function () view external returns (enum UtilLib.stage)"
                             }
                           },
-                          "id": 772,
+                          "id": 1061,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -711,7 +711,7 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 773,
+                              "id": 1062,
                               "name": "UtilLib",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -722,7 +722,7 @@
                                 "typeString": "type(library UtilLib)"
                               }
                             },
-                            "id": 774,
+                            "id": 1063,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -736,7 +736,7 @@
                               "typeString": "type(enum UtilLib.stage)"
                             }
                           },
-                          "id": 775,
+                          "id": 1064,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -764,21 +764,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 767,
+                      "id": 1056,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        820,
-                        821
+                        1109,
+                        1110
                       ],
-                      "referencedDeclaration": 820,
+                      "referencedDeclaration": 1109,
                       "src": "542:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 777,
+                    "id": 1066,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -792,25 +792,25 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 778,
+                  "id": 1067,
                   "nodeType": "ExpressionStatement",
                   "src": "542:74:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 781,
+                    "id": 1070,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 779,
+                      "id": 1068,
                       "name": "name",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 736,
+                      "referencedDeclaration": 1025,
                       "src": "627:4:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -821,11 +821,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 780,
+                      "id": 1069,
                       "name": "_name",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 746,
+                      "referencedDeclaration": 1035,
                       "src": "634:5:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -838,25 +838,25 @@
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 782,
+                  "id": 1071,
                   "nodeType": "ExpressionStatement",
                   "src": "627:12:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 785,
+                    "id": 1074,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 783,
+                      "id": 1072,
                       "name": "start_time",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 738,
+                      "referencedDeclaration": 1027,
                       "src": "650:10:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -867,11 +867,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 784,
+                      "id": 1073,
                       "name": "_start_time",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 748,
+                      "referencedDeclaration": 1037,
                       "src": "663:11:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -884,25 +884,25 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 786,
+                  "id": 1075,
                   "nodeType": "ExpressionStatement",
                   "src": "650:24:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 789,
+                    "id": 1078,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 787,
+                      "id": 1076,
                       "name": "stop_time",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 740,
+                      "referencedDeclaration": 1029,
                       "src": "685:9:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -913,11 +913,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 788,
+                      "id": 1077,
                       "name": "_stop_time",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 750,
+                      "referencedDeclaration": 1039,
                       "src": "697:10:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -930,25 +930,25 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 790,
+                  "id": 1079,
                   "nodeType": "ExpressionStatement",
                   "src": "685:22:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 793,
+                    "id": 1082,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 791,
+                      "id": 1080,
                       "name": "description",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 742,
+                      "referencedDeclaration": 1031,
                       "src": "718:11:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -959,11 +959,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 792,
+                      "id": 1081,
                       "name": "_description",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 752,
+                      "referencedDeclaration": 1041,
                       "src": "732:12:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -976,7 +976,7 @@
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 794,
+                  "id": 1083,
                   "nodeType": "ExpressionStatement",
                   "src": "718:26:8"
                 },
@@ -988,18 +988,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 796,
+                          "id": 1085,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 817,
+                          "referencedDeclaration": 1106,
                           "src": "776:3:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 797,
+                        "id": 1086,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1021,7 +1021,7 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 795,
+                      "id": 1084,
                       "name": "ContractCreated",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -1032,7 +1032,7 @@
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 798,
+                    "id": 1087,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1046,14 +1046,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 799,
+                  "id": 1088,
                   "nodeType": "EmitStatement",
                   "src": "755:32:8"
                 }
               ]
             },
             "documentation": null,
-            "id": 801,
+            "id": 1090,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -1061,15 +1061,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 753,
+              "id": 1042,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 744,
+                  "id": 1033,
                   "name": "_addr",
                   "nodeType": "VariableDeclaration",
-                  "scope": 801,
+                  "scope": 1090,
                   "src": "363:13:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1078,7 +1078,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 743,
+                    "id": 1032,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "363:7:8",
@@ -1092,10 +1092,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 746,
+                  "id": 1035,
                   "name": "_name",
                   "nodeType": "VariableDeclaration",
-                  "scope": 801,
+                  "scope": 1090,
                   "src": "378:12:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1104,7 +1104,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 745,
+                    "id": 1034,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "378:6:8",
@@ -1118,10 +1118,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 748,
+                  "id": 1037,
                   "name": "_start_time",
                   "nodeType": "VariableDeclaration",
-                  "scope": 801,
+                  "scope": 1090,
                   "src": "392:16:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1130,7 +1130,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 747,
+                    "id": 1036,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "392:4:8",
@@ -1144,10 +1144,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 750,
+                  "id": 1039,
                   "name": "_stop_time",
                   "nodeType": "VariableDeclaration",
-                  "scope": 801,
+                  "scope": 1090,
                   "src": "410:15:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1156,7 +1156,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 749,
+                    "id": 1038,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "410:4:8",
@@ -1170,10 +1170,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 752,
+                  "id": 1041,
                   "name": "_description",
                   "nodeType": "VariableDeclaration",
-                  "scope": 801,
+                  "scope": 1090,
                   "src": "427:19:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1182,7 +1182,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 751,
+                    "id": 1040,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "427:6:8",
@@ -1199,19 +1199,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 754,
+              "id": 1043,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "455:0:8"
             },
-            "scope": 802,
+            "scope": 1091,
             "src": "351:444:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 803,
+        "scope": 1092,
         "src": "112:686:8"
       }
     ],
@@ -1221,14 +1221,14 @@
     "absolutePath": "/C/Users/TuanNH/Desktop/eth_prj/eth_contracts/contracts/TreatmentMethod.sol",
     "exportedSymbols": {
       "TreatmentMethod": [
-        802
+        1091
       ]
     },
-    "id": 803,
+    "id": 1092,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 724,
+        "id": 1013,
         "literals": [
           "solidity",
           "^",
@@ -1241,9 +1241,9 @@
       {
         "absolutePath": "/C/Users/TuanNH/Desktop/eth_prj/eth_contracts/contracts/Libraries.sol",
         "file": "./Libraries.sol",
-        "id": 725,
+        "id": 1014,
         "nodeType": "ImportDirective",
-        "scope": 803,
+        "scope": 1092,
         "sourceUnit": 159,
         "src": "28:25:8",
         "symbolAliases": [],
@@ -1252,9 +1252,9 @@
       {
         "absolutePath": "/C/Users/TuanNH/Desktop/eth_prj/eth_contracts/contracts/BaseContracts.sol",
         "file": "./BaseContracts.sol",
-        "id": 726,
+        "id": 1015,
         "nodeType": "ImportDirective",
-        "scope": 803,
+        "scope": 1092,
         "sourceUnit": 52,
         "src": "55:29:8",
         "symbolAliases": [],
@@ -1263,10 +1263,10 @@
       {
         "absolutePath": "/C/Users/TuanNH/Desktop/eth_prj/eth_contracts/contracts/Stages.sol",
         "file": "./Stages.sol",
-        "id": 727,
+        "id": 1016,
         "nodeType": "ImportDirective",
-        "scope": 803,
-        "sourceUnit": 723,
+        "scope": 1092,
+        "sourceUnit": 1012,
         "src": "86:22:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1277,7 +1277,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 728,
+              "id": 1017,
               "name": "BaseContract",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 37,
@@ -1287,7 +1287,7 @@
                 "typeString": "contract BaseContract"
               }
             },
-            "id": 729,
+            "id": 1018,
             "nodeType": "InheritanceSpecifier",
             "src": "140:12:8"
           }
@@ -1298,9 +1298,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 802,
+        "id": 1091,
         "linearizedBaseContracts": [
-          802,
+          1091,
           37
         ],
         "name": "TreatmentMethod",
@@ -1308,10 +1308,10 @@
         "nodes": [
           {
             "constant": false,
-            "id": 734,
+            "id": 1023,
             "name": "classtype",
             "nodeType": "VariableDeclaration",
-            "scope": 802,
+            "scope": 1091,
             "src": "160:62:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1321,7 +1321,7 @@
             },
             "typeName": {
               "contractScope": null,
-              "id": 730,
+              "id": 1019,
               "name": "UtilLib.class",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 125,
@@ -1337,7 +1337,7 @@
                 "argumentTypes": null,
                 "expression": {
                   "argumentTypes": null,
-                  "id": 731,
+                  "id": 1020,
                   "name": "UtilLib",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
@@ -1348,7 +1348,7 @@
                     "typeString": "type(library UtilLib)"
                   }
                 },
-                "id": 732,
+                "id": 1021,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": false,
@@ -1362,7 +1362,7 @@
                   "typeString": "type(enum UtilLib.class)"
                 }
               },
-              "id": 733,
+              "id": 1022,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1380,10 +1380,10 @@
           },
           {
             "constant": false,
-            "id": 736,
+            "id": 1025,
             "name": "name",
             "nodeType": "VariableDeclaration",
-            "scope": 802,
+            "scope": 1091,
             "src": "235:18:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1392,7 +1392,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 735,
+              "id": 1024,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "235:6:8",
@@ -1406,10 +1406,10 @@
           },
           {
             "constant": false,
-            "id": 738,
+            "id": 1027,
             "name": "start_time",
             "nodeType": "VariableDeclaration",
-            "scope": 802,
+            "scope": 1091,
             "src": "260:22:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1418,7 +1418,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 737,
+              "id": 1026,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "260:4:8",
@@ -1432,10 +1432,10 @@
           },
           {
             "constant": false,
-            "id": 740,
+            "id": 1029,
             "name": "stop_time",
             "nodeType": "VariableDeclaration",
-            "scope": 802,
+            "scope": 1091,
             "src": "289:21:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1444,7 +1444,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 739,
+              "id": 1028,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "289:4:8",
@@ -1458,10 +1458,10 @@
           },
           {
             "constant": false,
-            "id": 742,
+            "id": 1031,
             "name": "description",
             "nodeType": "VariableDeclaration",
-            "scope": 802,
+            "scope": 1091,
             "src": "317:25:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1470,7 +1470,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 741,
+              "id": 1030,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "317:6:8",
@@ -1484,7 +1484,7 @@
           },
           {
             "body": {
-              "id": 800,
+              "id": 1089,
               "nodeType": "Block",
               "src": "455:340:8",
               "statements": [
@@ -1498,7 +1498,7 @@
                           "typeIdentifier": "t_enum$_class_$125",
                           "typeString": "enum UtilLib.class"
                         },
-                        "id": 764,
+                        "id": 1053,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1513,11 +1513,11 @@
                               "arguments": [
                                 {
                                   "argumentTypes": null,
-                                  "id": 757,
+                                  "id": 1046,
                                   "name": "_addr",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 744,
+                                  "referencedDeclaration": 1033,
                                   "src": "489:5:8",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_address",
@@ -1532,18 +1532,18 @@
                                     "typeString": "address"
                                   }
                                 ],
-                                "id": 756,
+                                "id": 1045,
                                 "name": "TreatmentStage",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 592,
+                                "referencedDeclaration": 881,
                                 "src": "474:14:8",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_TreatmentStage_$592_$",
+                                  "typeIdentifier": "t_type$_t_contract$_TreatmentStage_$881_$",
                                   "typeString": "type(contract TreatmentStage)"
                                 }
                               },
-                              "id": 758,
+                              "id": 1047,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -1553,25 +1553,25 @@
                               "nodeType": "FunctionCall",
                               "src": "474:21:8",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_TreatmentStage_$592",
+                                "typeIdentifier": "t_contract$_TreatmentStage_$881",
                                 "typeString": "contract TreatmentStage"
                               }
                             },
-                            "id": 759,
+                            "id": 1048,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "classtype",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 458,
+                            "referencedDeclaration": 723,
                             "src": "474:31:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$__$returns$_t_enum$_class_$125_$",
                               "typeString": "function () view external returns (enum UtilLib.class)"
                             }
                           },
-                          "id": 760,
+                          "id": 1049,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1593,7 +1593,7 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 761,
+                              "id": 1050,
                               "name": "UtilLib",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -1604,7 +1604,7 @@
                                 "typeString": "type(library UtilLib)"
                               }
                             },
-                            "id": 762,
+                            "id": 1051,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1618,7 +1618,7 @@
                               "typeString": "type(enum UtilLib.class)"
                             }
                           },
-                          "id": 763,
+                          "id": 1052,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1646,21 +1646,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 755,
+                      "id": 1044,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        820,
-                        821
+                        1109,
+                        1110
                       ],
-                      "referencedDeclaration": 820,
+                      "referencedDeclaration": 1109,
                       "src": "466:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 765,
+                    "id": 1054,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1674,7 +1674,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 766,
+                  "id": 1055,
                   "nodeType": "ExpressionStatement",
                   "src": "466:65:8"
                 },
@@ -1688,7 +1688,7 @@
                           "typeIdentifier": "t_enum$_stage_$129",
                           "typeString": "enum UtilLib.stage"
                         },
-                        "id": 776,
+                        "id": 1065,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1703,11 +1703,11 @@
                               "arguments": [
                                 {
                                   "argumentTypes": null,
-                                  "id": 769,
+                                  "id": 1058,
                                   "name": "_addr",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 744,
+                                  "referencedDeclaration": 1033,
                                   "src": "565:5:8",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_address",
@@ -1722,18 +1722,18 @@
                                     "typeString": "address"
                                   }
                                 ],
-                                "id": 768,
+                                "id": 1057,
                                 "name": "TreatmentStage",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 592,
+                                "referencedDeclaration": 881,
                                 "src": "550:14:8",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_TreatmentStage_$592_$",
+                                  "typeIdentifier": "t_type$_t_contract$_TreatmentStage_$881_$",
                                   "typeString": "type(contract TreatmentStage)"
                                 }
                               },
-                              "id": 770,
+                              "id": 1059,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -1743,25 +1743,25 @@
                               "nodeType": "FunctionCall",
                               "src": "550:21:8",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_TreatmentStage_$592",
+                                "typeIdentifier": "t_contract$_TreatmentStage_$881",
                                 "typeString": "contract TreatmentStage"
                               }
                             },
-                            "id": 771,
+                            "id": 1060,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "stagetype",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 540,
+                            "referencedDeclaration": 829,
                             "src": "550:31:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$__$returns$_t_enum$_stage_$129_$",
                               "typeString": "function () view external returns (enum UtilLib.stage)"
                             }
                           },
-                          "id": 772,
+                          "id": 1061,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1783,7 +1783,7 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 773,
+                              "id": 1062,
                               "name": "UtilLib",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -1794,7 +1794,7 @@
                                 "typeString": "type(library UtilLib)"
                               }
                             },
-                            "id": 774,
+                            "id": 1063,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1808,7 +1808,7 @@
                               "typeString": "type(enum UtilLib.stage)"
                             }
                           },
-                          "id": 775,
+                          "id": 1064,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1836,21 +1836,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 767,
+                      "id": 1056,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        820,
-                        821
+                        1109,
+                        1110
                       ],
-                      "referencedDeclaration": 820,
+                      "referencedDeclaration": 1109,
                       "src": "542:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 777,
+                    "id": 1066,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1864,25 +1864,25 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 778,
+                  "id": 1067,
                   "nodeType": "ExpressionStatement",
                   "src": "542:74:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 781,
+                    "id": 1070,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 779,
+                      "id": 1068,
                       "name": "name",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 736,
+                      "referencedDeclaration": 1025,
                       "src": "627:4:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -1893,11 +1893,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 780,
+                      "id": 1069,
                       "name": "_name",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 746,
+                      "referencedDeclaration": 1035,
                       "src": "634:5:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -1910,25 +1910,25 @@
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 782,
+                  "id": 1071,
                   "nodeType": "ExpressionStatement",
                   "src": "627:12:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 785,
+                    "id": 1074,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 783,
+                      "id": 1072,
                       "name": "start_time",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 738,
+                      "referencedDeclaration": 1027,
                       "src": "650:10:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1939,11 +1939,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 784,
+                      "id": 1073,
                       "name": "_start_time",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 748,
+                      "referencedDeclaration": 1037,
                       "src": "663:11:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1956,25 +1956,25 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 786,
+                  "id": 1075,
                   "nodeType": "ExpressionStatement",
                   "src": "650:24:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 789,
+                    "id": 1078,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 787,
+                      "id": 1076,
                       "name": "stop_time",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 740,
+                      "referencedDeclaration": 1029,
                       "src": "685:9:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1985,11 +1985,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 788,
+                      "id": 1077,
                       "name": "_stop_time",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 750,
+                      "referencedDeclaration": 1039,
                       "src": "697:10:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2002,25 +2002,25 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 790,
+                  "id": 1079,
                   "nodeType": "ExpressionStatement",
                   "src": "685:22:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 793,
+                    "id": 1082,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 791,
+                      "id": 1080,
                       "name": "description",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 742,
+                      "referencedDeclaration": 1031,
                       "src": "718:11:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -2031,11 +2031,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 792,
+                      "id": 1081,
                       "name": "_description",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 752,
+                      "referencedDeclaration": 1041,
                       "src": "732:12:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -2048,7 +2048,7 @@
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 794,
+                  "id": 1083,
                   "nodeType": "ExpressionStatement",
                   "src": "718:26:8"
                 },
@@ -2060,18 +2060,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 796,
+                          "id": 1085,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 817,
+                          "referencedDeclaration": 1106,
                           "src": "776:3:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 797,
+                        "id": 1086,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2093,7 +2093,7 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 795,
+                      "id": 1084,
                       "name": "ContractCreated",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -2104,7 +2104,7 @@
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 798,
+                    "id": 1087,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2118,14 +2118,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 799,
+                  "id": 1088,
                   "nodeType": "EmitStatement",
                   "src": "755:32:8"
                 }
               ]
             },
             "documentation": null,
-            "id": 801,
+            "id": 1090,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -2133,15 +2133,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 753,
+              "id": 1042,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 744,
+                  "id": 1033,
                   "name": "_addr",
                   "nodeType": "VariableDeclaration",
-                  "scope": 801,
+                  "scope": 1090,
                   "src": "363:13:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2150,7 +2150,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 743,
+                    "id": 1032,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "363:7:8",
@@ -2164,10 +2164,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 746,
+                  "id": 1035,
                   "name": "_name",
                   "nodeType": "VariableDeclaration",
-                  "scope": 801,
+                  "scope": 1090,
                   "src": "378:12:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2176,7 +2176,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 745,
+                    "id": 1034,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "378:6:8",
@@ -2190,10 +2190,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 748,
+                  "id": 1037,
                   "name": "_start_time",
                   "nodeType": "VariableDeclaration",
-                  "scope": 801,
+                  "scope": 1090,
                   "src": "392:16:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2202,7 +2202,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 747,
+                    "id": 1036,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "392:4:8",
@@ -2216,10 +2216,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 750,
+                  "id": 1039,
                   "name": "_stop_time",
                   "nodeType": "VariableDeclaration",
-                  "scope": 801,
+                  "scope": 1090,
                   "src": "410:15:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2228,7 +2228,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 749,
+                    "id": 1038,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "410:4:8",
@@ -2242,10 +2242,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 752,
+                  "id": 1041,
                   "name": "_description",
                   "nodeType": "VariableDeclaration",
-                  "scope": 801,
+                  "scope": 1090,
                   "src": "427:19:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2254,7 +2254,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 751,
+                    "id": 1040,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "427:6:8",
@@ -2271,19 +2271,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 754,
+              "id": 1043,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "455:0:8"
             },
-            "scope": 802,
+            "scope": 1091,
             "src": "351:444:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 803,
+        "scope": 1092,
         "src": "112:686:8"
       }
     ],
@@ -2295,5 +2295,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-07-20T17:50:53.871Z"
+  "updatedAt": "2018-07-20T21:34:40.883Z"
 }

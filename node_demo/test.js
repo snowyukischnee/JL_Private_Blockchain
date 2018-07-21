@@ -24,7 +24,7 @@ async function deploy_contracts() {
         let transaction_hash
         let estimatedGas
         /*let contractRecord1 = new web3.eth.Contract(Record.abi, "0x9f67e20A0A00B49EeEdc54aa330B965C2A9D2782")
-        let x = await contractRecord1.methods.stages(0).call().then((result) => )
+        let x = await contractRecord1.methods.stages(0).call().then(console.log)
         console.log(x)
         x = await contractRecord1.methods.stages(1).call()
         console.log(x)
