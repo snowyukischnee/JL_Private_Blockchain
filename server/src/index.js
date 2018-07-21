@@ -5,6 +5,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 import  ViewProfilePage from './components/ViewProfilePage';
+import  HomePage from './components/HomePage';
 
-ReactDOM.render(<ViewProfilePage address="0x67ECd2E10E4da7dfa10FD0508C05c4D6f80e9A11" />, document.getElementById('root'));
+ReactDOM.render(<HomePage/>, document.getElementById('root'));
 registerServiceWorker();
