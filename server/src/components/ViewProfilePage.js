@@ -7,7 +7,7 @@ class ViewProfilePage extends Component {
         super(props);
         this.handleChange = this.handleChange.bind(this);
         this.onClickObject = this.onClickObject.bind(this);
-        this.onUpdate = this.onUpdate.bind(this);
+        this.update = this.update.bind(this);
         this.componentDidMount = this.componentDidMount.bind(this);
         this.handleCheckbox = this.handleCheckbox.bind(this);
         this.state = {
@@ -25,7 +25,7 @@ class ViewProfilePage extends Component {
                 health_assuarance_expired_date: "",
                 health_assuarance_id: "",
                 contact: "",
-                records: "",
+                records: [],
             }
         }
     }
@@ -44,6 +44,12 @@ class ViewProfilePage extends Component {
         this.state.form_data.health_assuarance_expired_date = await deployedContractMethod.health_assuarance_expired_date().call()
         this.state.form_data.health_assuarance_id = await deployedContractMethod.health_assuarance_id().call()
         this.state.form_data.contact = await deployedContractMethod.contact().call()
+        let index = 0
+        try {
+            this.state.form_data.records.push(await deployedContractMethod.contact(index++).call())
+        } catch (e) {
+            console.error(e)
+        }
         await this.setState(this.state);
     }
    
@@ -51,11 +57,12 @@ class ViewProfilePage extends Component {
         console.log(this.state);
     }
 
-    onUpdate(event) {
+    update(event) {
         event.preventDefault();
+        let password = prompt("provide private key")
         Profile_setVariables(
             this.state.form_data.address, 
-            "my priv key", 
+            password, 
             this.state.form_data.full_name, 
             this.state.form_data.gender, 
             this.state.form_data.dob, 
@@ -78,7 +85,6 @@ class ViewProfilePage extends Component {
     }
 
     handleCheckbox(event) {
-        console.log(event.target.checked)
         this.state.form_data[event.target.name] = event.target.checked
         this.setState(this.state)
     }
@@ -103,7 +109,7 @@ class ViewProfilePage extends Component {
                     <br/><label>health_assuarance_expired_date<input type="number" name="health_assuarance_expired_date" value={this.state.form_data.health_assuarance_expired_date} onChange={this.handleChange}/></label>
                     <br/><label>health_assuarance_id<input type="text" name="health_assuarance_id" value={this.state.form_data.health_assuarance_id} onChange={this.handleChange}/></label>
                     <br/><label>contact<input type="text" name="contact" value={this.state.form_data.contact} onChange={this.handleChange}/></label>
-                    <input type="submit" name="update" value="update"/>
+                    <button name="update" onClick={this.update}>Update</button>
                 </form>
             </div>
         )
