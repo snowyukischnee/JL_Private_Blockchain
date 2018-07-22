@@ -583,12 +583,12 @@ new Date().getTime()/1000, "Dead", "Disapear",
 new Date().getTime()/1000, true, false,
 new Date().getTime()/1000, "null", "null")*/
 
-//TreatmentStage_constructor("0x99c280BaD27f340f871C0d6152FD2EC76D98e738", 2).then(console.log)
+//TreatmentStage_constructor("0x488Ff7F0f4a0880c23e50C64Ed86a2D03f604808", 2).then(console.log)
 //TreatmentMethod_constructor("0xa59109dcB07f8452e13B2940a99828ACC6061a54", "name of treatment", new Date().getTime()/1000, new Date().getTime()/1000, "NO DESC").then(console.log)
 //TreatmentStage_addTreatmentMethod("0xa59109dcB07f8452e13B2940a99828ACC6061a54", "0x1069C793f85825D49f76353487668afDbefDe8b3").then(console.log)
 //Stage_setVariables("0xa59109dcB07f8452e13B2940a99828ACC6061a54", "IDIDIDIDIDID")
 //Stage_confirm("0xa59109dcB07f8452e13B2940a99828ACC6061a54")
-//TestStage_constructor("0x99c280BaD27f340f871C0d6152FD2EC76D98e738", 5).then(console.log)
+TestStage_constructor("0x488Ff7F0f4a0880c23e50C64Ed86a2D03f604808", 5).then(console.log)
 //File_constructor("0x78Bc68422d9e90b2F05B6b01D5C21bD98538F365", "Blood test", "filenamehashed").then(console.log)
 //TestStage_pushFile("0x78Bc68422d9e90b2F05B6b01D5C21bD98538F365", "0x31C158c760ca90474D801C2820b3C5d501d1AFec")
 //Stage_confirm("0x78Bc68422d9e90b2F05B6b01D5C21bD98538F365")
